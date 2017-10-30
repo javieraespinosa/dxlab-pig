@@ -1,0 +1,10 @@
+
+version: '3'
+services:
+  pig:
+    build:    .
+    image:    jaeo/dxlab-pig
+    command:  pig -x local -4 ./conf/log4j.properties
+    volumes:
+      - .:/root/
+      
